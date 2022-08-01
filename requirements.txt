@@ -1,3 +1,4 @@
 requests
 selene == 2.0.b3
 selenium
+PyPDF2 == 2.5.0
