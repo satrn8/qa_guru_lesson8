@@ -1,11 +1,12 @@
 import os.path
 import time
-
 from selene.support.shared import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
+
+current_directory = os.path.abspath(__file__)
 options = webdriver.ChromeOptions()
 
 prefs = {
