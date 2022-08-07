@@ -6,11 +6,11 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-current_directory = os.path.abspath(__file__)
+current_dir = os.path.dirname(os.path.abspath(__file__))
 options = webdriver.ChromeOptions()
 
 prefs = {
-    "download.default_directory": "..\\qa_guru_lesson8\\tmp",
+    "download.default_directory": current_dir + "\\tmp",
     "download.prompt_for_download": False,
 
 }
